@@ -797,7 +797,7 @@ class AppUIManager {
     */
     
     // MARK: - layout methods
-    class func horizontallyCenterElement(view:UIView, inView:UIView){
+    class func horizontallyCenterElement(view: UIView, inView: UIView){
         // Center
         inView.addConstraint(NSLayoutConstraint(
             item:view,
@@ -809,7 +809,7 @@ class AppUIManager {
             constant:0.0))
         }
     
-    class func virticallyCenterElement(view:UIView, inView:UIView){
+    class func virticallyCenterElement(view: UIView, inView: UIView){
         // Center
         inView.addConstraint(NSLayoutConstraint(
             item:view,
