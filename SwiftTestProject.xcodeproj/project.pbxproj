@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		113D5A121A9D48FE00BAF385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D5A111A9D48FE00BAF385 /* AppDelegate.swift */; };
 		113D5A141A9D48FE00BAF385 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D5A131A9D48FE00BAF385 /* ViewController.swift */; };
-		113D5A171A9D48FE00BAF385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113D5A151A9D48FE00BAF385 /* Main.storyboard */; };
 		113D5A191A9D48FE00BAF385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113D5A181A9D48FE00BAF385 /* Images.xcassets */; };
-		113D5A1C1A9D48FE00BAF385 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113D5A1A1A9D48FE00BAF385 /* LaunchScreen.xib */; };
 		113D5A281A9D48FE00BAF385 /* SwiftTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D5A271A9D48FE00BAF385 /* SwiftTestProjectTests.swift */; };
+		113D5A321A9D497600BAF385 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 113D5A311A9D497600BAF385 /* Default-568h@2x.png */; };
+		113D5A371A9D57EB00BAF385 /* AppUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D5A361A9D57EB00BAF385 /* AppUIManager.swift */; };
+		113D5A381A9D57EB00BAF385 /* AppUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D5A361A9D57EB00BAF385 /* AppUIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +31,12 @@
 		113D5A101A9D48FE00BAF385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113D5A111A9D48FE00BAF385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		113D5A131A9D48FE00BAF385 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		113D5A161A9D48FE00BAF385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		113D5A181A9D48FE00BAF385 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		113D5A1B1A9D48FE00BAF385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		113D5A211A9D48FE00BAF385 /* SwiftTestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		113D5A261A9D48FE00BAF385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113D5A271A9D48FE00BAF385 /* SwiftTestProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestProjectTests.swift; sourceTree = "<group>"; };
+		113D5A311A9D497600BAF385 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		113D5A361A9D57EB00BAF385 /* AppUIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +78,11 @@
 		113D5A0E1A9D48FE00BAF385 /* SwiftTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				113D5A341A9D57AB00BAF385 /* Views */,
+				113D5A331A9D4A4E00BAF385 /* Resources */,
 				113D5A111A9D48FE00BAF385 /* AppDelegate.swift */,
 				113D5A131A9D48FE00BAF385 /* ViewController.swift */,
-				113D5A151A9D48FE00BAF385 /* Main.storyboard */,
 				113D5A181A9D48FE00BAF385 /* Images.xcassets */,
-				113D5A1A1A9D48FE00BAF385 /* LaunchScreen.xib */,
 				113D5A0F1A9D48FE00BAF385 /* Supporting Files */,
 			);
 			path = SwiftTestProject;
@@ -110,6 +111,30 @@
 				113D5A261A9D48FE00BAF385 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		113D5A331A9D4A4E00BAF385 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				113D5A311A9D497600BAF385 /* Default-568h@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		113D5A341A9D57AB00BAF385 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				113D5A351A9D57B800BAF385 /* AppUI */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		113D5A351A9D57B800BAF385 /* AppUI */ = {
+			isa = PBXGroup;
+			children = (
+				113D5A361A9D57EB00BAF385 /* AppUIManager.swift */,
+			);
+			name = AppUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +217,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				113D5A171A9D48FE00BAF385 /* Main.storyboard in Resources */,
-				113D5A1C1A9D48FE00BAF385 /* LaunchScreen.xib in Resources */,
 				113D5A191A9D48FE00BAF385 /* Images.xcassets in Resources */,
+				113D5A321A9D497600BAF385 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				113D5A141A9D48FE00BAF385 /* ViewController.swift in Sources */,
+				113D5A371A9D57EB00BAF385 /* AppUIManager.swift in Sources */,
 				113D5A121A9D48FE00BAF385 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				113D5A281A9D48FE00BAF385 /* SwiftTestProjectTests.swift in Sources */,
+				113D5A381A9D57EB00BAF385 /* AppUIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,25 +260,6 @@
 			targetProxy = 113D5A221A9D48FE00BAF385 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		113D5A151A9D48FE00BAF385 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				113D5A161A9D48FE00BAF385 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		113D5A1A1A9D48FE00BAF385 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				113D5A1B1A9D48FE00BAF385 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		113D5A291A9D48FE00BAF385 /* Debug */ = {
@@ -405,6 +412,7 @@
 				113D5A2D1A9D48FE00BAF385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		113D5A2E1A9D48FE00BAF385 /* Build configuration list for PBXNativeTarget "SwiftTestProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +421,7 @@
 				113D5A301A9D48FE00BAF385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
